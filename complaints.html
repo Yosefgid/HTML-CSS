@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Northcoders Surgery: Complaints</title>
+</head>
+ <body>
+     <header>
+         <a href="./index.html">Northcoders Surgery</a>
+         <a href="tel:03330509138">0333 050 9138</a>
+     </header>
+
+     <nav>
+         <ul style="list-style-type:none;">
+             <li><a href="./index.html">Home</a></li>
+             <li><a href="./services.html">Services</a></li>
+             <li><a href="./team.html">Team</a></li>
+             <li><a href="./patient.html">Patient Information</a></li>
+             <li><a href="./well-being-centre.html">Well-being Centre</a></li>
+             <li><a href="./complaints.html">ComplaintsService</a></li>
+         </ul>
+     </nav>
+
+     <main>
+         <h1> Complaints Form</h1>
+         <p>Send us a message by filling out the form below and one of our Receptionists will be in touch:</p>
+         <form>
+
+             <div>
+                 <label for="name">Full Name </label>
+                 <input type="text" id="name" name="name" required />
+             </div>
+             <br>
+             <div>
+                 <label for="patientnumber"> Patient Number </label>
+                 <input type="date" id="dob" name="dob" required />
+             </div>
+             <br>
+             <div>
+                 <label for="telephone">Telephone Number: </label>
+                 <input type="tel" id="telephone" name="telephone">
+             </div>
+             <br>
+             <div>
+                 <label for="email">Email: </label>
+                 <input type="email" id="email" name="email" required>
+             </div>
+             <br>
+
+             <fieldset>
+                 <p>Please select complaint category: </p>
+                 <p>
+                     <label for="appointment">  Appointment </label>
+                     <input type="radio" id="appointment" name="Categories" />
+                 </p>
+                 <p>
+                     <label for="communication">  Coummunication </label>
+                     <input type="checkbox" id="communication" name="Categories" />
+                 </p>
+                 <label for="medicalcare">  Medical Care </label>
+                 <input type="radio" id="medicalcare" name="Categories" />
+                 </p>
+                 <p>
+                     <label for="other">  Other </label>
+                     <input type="radio" id="other" name="Categories" />
+                 </p>
+
+             </fieldset>
+             <fieldset>
+
+                 <legend> Please provide the text of your complaint in the box below</legend>
+
+                 <p>
+                     <label for="complainttext"> <strong>Complaint Text</strong></label>
+                     <textarea id="complainttext" name="complainttext" rows="10" column="40">
+
+    </textarea>
+
+
+                 </p>
+             </fieldset>
+             <div>
+                 <input type="submit" value="Submit">
+             </div>
+         </form>
+     </main>
+
+ </body>
+</html>

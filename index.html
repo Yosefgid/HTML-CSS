@@ -1,32 +1,55 @@
+<!DOCTYPE html>
 
-<fixme lang="fr">
+<html lang="en">
 
-	<fixme>
-    	<fixme charset="UTF-8"/>
+	<head>
+    	<meta charset="UTF-8"/>
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<fixme>Northcoders Surgery: Home</fixme>
-	</fixme>
+    	<title>Northcoders Surgery: Home</title>
+		<br />
+		<style>
+            ul {
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+                gap: 30px;
+				margin-bottom: 50px;
+            }
+        </style>
+		<style>
+			li {display:inline-flex;
+				margin : 0;
+				padding:0;
+			}
+		</style>
+		<style>
+            #colourorange {background-color : orange;}
+		</style>
+	</head>
 
-	<fixme>
-		<fixme>
-			<a href="#">Northcoders Surgery</a>
+	<body>
+		<header>
+			<a href="./index.html">Northcoders Surgery</a>
 			<a href="tel:03330509138">0333 050 9138</a>
-		</fixme>
+		</header>
 
-		<fixme>
-			<fixme>
-				<fixme><a href="#">Home</a></fixme>
-				<fixme><a href="#">Services</a></fixme>
-				<fixme><a href="#">Team</a></fixme>
-				<fixme><a href="#">Patient Information</a></fixme>
-				<fixme><a href="#">Well-being Centre</a></fixme>
-			</fixme>
-		</fixme>
+
+		<nav>
+			<ul style= "list-style-type:none;" id="colourorange">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./team.html">Team</a></li>
+				<li><a href="./patient.html">Patient Information</a></li>
+				<li><a href="./well-being-centre.html">Well-being Centre</a></li>
+				<li><a href="./complaints.html">ComplaintsService</a></li>
+			</ul>
+		</nav>
 
 		<label for="site-search">Search...</label>
 		<input type="search" id="site-search" name="search" aria-label="Search through site content">
-		<fixme>Search</fixme>
+		<button>Search</button>
 
 		<section>
 			<h3>COVID Restriction Update</h3>
@@ -34,8 +57,8 @@
 			<p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and
 				staff, we will continue to do so.</p>
 
-			<p>From the <fixme>19th July 2021 nothing will change at the Surgery</fixme> Patients will <fixme>still
-					need</fixme> to
+			<p>From the <u>19th July 2021 nothing will change at the Surgery</u> Patients will <u>still
+					need</u> to
 				wear a mask, socially distance and use hand sanitiser in the surgery and staff will continue to
 				wear PPE.
 			</p>
@@ -44,36 +67,43 @@
 		</section>
 
 
-		<fixme>
-			<fixme>Welcome to the Northcoders Surgery!</fixme>
-
-			<fixme src="./surgery.png">
-
-			<fixme> The Northcoders Surgery,<br>
+		<main>
+			<h1>Welcome to the Northcoders Surgery!</h1>
+			<div style= 
+				 "width:100%; 
+                  margin:0;
+                  height:400px;
+				  overflow: hidden;
+                     ">
+			<img src="./surgery.png"
+				 alt=" Sphygmomanometer thermometer and tablet packet banner indicating a general practice surgery"
+				 style = "height: 100%; width:100%; object-fit:cover; object-position: center;">
+			</div>
+			<address> The Northcoders Surgery,<br>
 				115 Mancunian Way,<br>
 				Manchester,<br>
 				M20 3PX
-			</fixme>
-		</fixme>
+			</address>
+		</main>
 
 		<section>
 			<h2>How to use Ask My Doc?</h2>
 
-			<fixme controls width="250">
+			<video controls width="250">
 				<source src="#" type="video/webm">
 				<source src="#" type="video/mp4">
 
 				<track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default />
 
 				Sorry, your browser doesn't support embedded videos.
-			</fixme>
+			</video>
 		</section>
 
 
 		<section>
 			<h2>Need advice or have some feedback for us?</h2>
 
-			<fixme>
+			<form>
 				<fieldset>
 					<legend>Send us a message by filling out the form below and one of our Receptionists will be in touch:
 					</legend>
@@ -119,7 +149,7 @@
 
 					<input type="submit" value="Submit">
 				</fieldset>
-			</fixme>
-		</fixme>
-	</fixme>
-</fixme>
+			</form>
+		</section>
+	</body>
+</html>
