@@ -1,20 +1,143 @@
 /* Your CSS styles here! */
 * {
-    font-family: monospace, sans-serif, Arial;
-    font-size: 16px;
-    font-weight: 400
-}
-body {
-    margin:0;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: monospace, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 150px;
 }
 
 h1 {
     font-size: 2.5rem;
 }
-h2{
+
+h2 {
     font-size: 1.5rem;
 }
+
 h3 {
     font-size: 1rem;
+}
+
+/*Nav*/
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #071881;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #14174F;
+}
+
+
+.header-top {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    width: 100%;
+}
+
+.home-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.call-button {
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    white-space: nowrap;
+}
+
+/* ========================
+   SEARCH BAR
+======================== */
+.search-bar {
+    display: flex;
+    margin-left: auto;
+    width: 320px;
+}
+
+.search-label {
+    display: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.4rem 0.75rem;
+    border: 2px solid white;
+    border-right: none;
+    font-size: 1rem;
+    font-family: monospace, Arial, sans-serif;
+    outline: none;
+}
+
+.search-button {
+    padding: 0.4rem 1rem;
+    background-color: white;
+    color: #071881;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace, Arial, sans-serif;
+}
+
+    .search-button:hover {
+        background-color: #e0e0e0;
+    }
+
+/* ========================
+   NAVIGATION
+======================== */
+.main-nav {
+    width: 100%;
+    background-color: #071881;
+    border-top: 1px solid #14174F;
+    padding: 0 2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+}
+
+    .nav-link:hover {
+        background-color: #14174F;
+    }
+
+/* ========================
+   MAIN CONTENT
+======================== */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 10px;
+    height: 10px;
 }

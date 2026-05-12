@@ -15,28 +15,29 @@
     <!--header-->
 
     <header class="site-header">
-        <a class="home-button" href="./index.html">Northcoders Surgery</a>
-        <a class="call-button" href="tel:03330509138">0333 050 9138</a>
+      <div class="header-top">
+        <a class="home-button home" href="./index.html">Northcoders Surgery</a>
+        <a class="call-button home" href="tel:03330509138">0333 050 9138</a>
+        
+        <div class="search-bar" role="search">
+            <label class="search-label" for="site-search">Search</label>
+            <input class="search-input" type="search" id="site-search" name="search" aria-label="Search through site content">
+            <button class="search-button" type="button">Search</button>
+        </div>
+      </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li class="list-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="list-item"><a class="nav-link" href="./services.html">Services</a></li>
+                <li class="list-item"><a class="nav-link" href="./team.html">Team</a></li>
+                <li class="list-item"><a class="nav-link" href="./patient.html">Patient Information</a></li>
+                <li class="list-item"><a class="nav-link" href="./well-being-centre.html">Well-being Centre</a></li>
+                <li class="list-item"><a class="nav-link" href="./complaints.html">Complaints Service</a></li>
+            </ul>
+        </nav>
     </header>
 
-
-    <nav class="main-nav" aria-label="Main navigation">
-        <ul class="nav-list">
-            <li class="list-item"><a class="nav-link" href="./index.html">Home</a></li>
-            <li class="list-item"><a class="nav-link" href="./services.html">Services</a></li>
-            <li class="list-item"><a class="nav-link" href="./team.html">Team</a></li>
-            <li class="list-item"><a class="nav-link" href="./patient.html">Patient Information</a></li>
-            <li class="list-item"><a class="nav-link" href="./well-being-centre.html">Well-being Centre</a></li>
-            <li class="list-item"><a class="nav-link" href="./complaints.html">Complaints Service</a></li>
-        </ul>
-    </nav>
-
-    <!--search-->
-    <div class="search-bar" role="search">
-        <label class="search-label" for="site-search">Search</label>
-        <input class="search-input" type="search" id="site-search" name="search" aria-label="Search through site content">
-        <button class="search-button" type="button">Search</button>
-    </div>
+    
 
     <!--Hero section mission statement -->
     <section class="notice" aria-label="Covid update">
