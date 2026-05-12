@@ -2,154 +2,144 @@
 
 <html lang="en">
 
-	<head>
-    	<meta charset="UTF-8"/>
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Northcoders Surgery: Home</title>
-		<br />
-		<style>
-            ul {
-                display: flex;
-                justify-content: center;
-                padding: 0;
-                margin: 0;
-                gap: 30px;
-				margin-bottom: 50px;
-            }
-        </style>
-		<style>
-			li {display:inline-flex;
-				margin : 0;
-				padding:0;
-			}
-		</style>
-		<style>
-            #colourorange {background-color : orange;}
-		</style>
-	</head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Northcoders Surgery: Home</title>
+</head>
 
-	<body>
-		<header>
-			<a href="./index.html">Northcoders Surgery</a>
-			<a href="tel:03330509138">0333 050 9138</a>
-		</header>
+<body>
+
+    <!--header-->
+
+    <header class="site-header">
+        <a class="home-button" href="./index.html">Northcoders Surgery</a>
+        <a class="call-button" href="tel:03330509138">0333 050 9138</a>
+    </header>
 
 
-		<nav>
-			<ul style= "list-style-type:none;" id="colourorange">
-				<li><a href="./index.html">Home</a></li>
-				<li><a href="./services.html">Services</a></li>
-				<li><a href="./team.html">Team</a></li>
-				<li><a href="./patient.html">Patient Information</a></li>
-				<li><a href="./well-being-centre.html">Well-being Centre</a></li>
-				<li><a href="./complaints.html">ComplaintsService</a></li>
-			</ul>
-		</nav>
+    <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+            <li class="list-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="list-item"><a class="nav-link" href="./services.html">Services</a></li>
+            <li class="list-item"><a class="nav-link" href="./team.html">Team</a></li>
+            <li class="list-item"><a class="nav-link" href="./patient.html">Patient Information</a></li>
+            <li class="list-item"><a class="nav-link" href="./well-being-centre.html">Well-being Centre</a></li>
+            <li class="list-item"><a class="nav-link" href="./complaints.html">Complaints Service</a></li>
+        </ul>
+    </nav>
 
-		<label for="site-search">Search...</label>
-		<input type="search" id="site-search" name="search" aria-label="Search through site content">
-		<button>Search</button>
+    <!--search-->
+    <div class="search-bar" role="search">
+        <label class="search-label" for="site-search">Search</label>
+        <input class="search-input" type="search" id="site-search" name="search" aria-label="Search through site content">
+        <button class="search-button" type="button">Search</button>
+    </div>
 
-		<section>
-			<h3>COVID Restriction Update</h3>
+    <!--Hero section mission statement -->
+    <section class="notice" aria-label="Covid update">
+        <h3 class="covid-title">COVID Restriction Update</h3>
 
-			<p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and
-				staff, we will continue to do so.</p>
+        <p class="covid-txt">
+            Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and
+            staff, we will continue to do so.
+        </p>
 
-			<p>From the <u>19th July 2021 nothing will change at the Surgery</u> Patients will <u>still
-					need</u> to
-				wear a mask, socially distance and use hand sanitiser in the surgery and staff will continue to
-				wear PPE.
-			</p>
+        <p class="covid-txt">
+            From the <u>19th July 2021 nothing will change at the Surgery</u> Patients will <u>still need</u> to
+            wear a mask, socially distance and use hand sanitiser in the surgery and staff will continue to
+            wear PPE.
+        </p>
 
-			<p>If you arrive without a mask and are not exempt, you will be asked to leave.</p>
-		</section>
-
-
-		<main>
-			<h1>Welcome to the Northcoders Surgery!</h1>
-			<div style= 
-				 "width:100%; 
-                  margin:0;
-                  height:400px;
-				  overflow: hidden;
-                     ">
-			<img src="./surgery.png"
-				 alt=" Sphygmomanometer thermometer and tablet packet banner indicating a general practice surgery"
-				 style = "height: 100%; width:100%; object-fit:cover; object-position: center;">
-			</div>
-			<address> The Northcoders Surgery,<br>
-				115 Mancunian Way,<br>
-				Manchester,<br>
-				M20 3PX
-			</address>
-		</main>
-
-		<section>
-			<h2>How to use Ask My Doc?</h2>
-
-			<video controls width="250">
-				<source src="#" type="video/webm">
-				<source src="#" type="video/mp4">
-
-				<track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default />
-
-				Sorry, your browser doesn't support embedded videos.
-			</video>
-		</section>
+        <p class="covid-txt">If you arrive without a mask and are not exempt, you will be asked to leave.</p>
+    </section>
 
 
-		<section>
-			<h2>Need advice or have some feedback for us?</h2>
+    <main class="main-content" id="main-content">
+        <h1 class="title" id="banner">Welcome to the Northcoders Surgery!</h1>
+        <div class="hero-section" id="hero-section">
+            <img class="hero-img" src="./surgery.png"
+                 alt="Sphygmomanometer thermometer and tablet packet banner indicating a general practice surgery">
+        </div>
+        <address class="surgery-address">
+            The Northcoders Surgery,<br>
+            115 Mancunian Way,<br>
+            Manchester,<br>
+            M20 3PX
+        </address>
+    </main>
 
-			<form>
-				<fieldset>
-					<legend>Send us a message by filling out the form below and one of our Receptionists will be in touch:
-					</legend>
+    <section class="video-section" aria-labelledby="video-section-title">
+        <h2 class="video-section-title" id="video-section-title">How to use Ask My Doc?</h2>
 
-					<p>Are you completing this form on behalf of: </p>
+        <video class="video-player" controls width="250">
+            <source src="#" type="video/webm">
+            <source src="#" type="video/mp4">
 
-					<label for="self">Yourself </label>
-					<input type="checkbox" id="self" name="self">
+            <track kind="captions" srclang="en" src="./ask_my_doc_transcript.vtt" default />
 
-					<label for="another">Someone else </label>
-					<input type="checkbox" id="another" name="another">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </section>
 
 
-					<div>
-						<label for="fname">First Name </label>
-						<input type="text" id="fname" name="fname" required>
-					</div>
+    <section class="contact-section">
+        <h2 class="contact-section-title" id="contact-section-title">Need advice or have some feedback for us?</h2>
 
-					<div>
-						<label for="lname">Last Name </label>
-						<input type="text" id="lname" name="lname" required>
-					</div>
+        <form class="contact-form" action="#" method="post" novalidate>
+            <fieldset class="contact-form-fieldset">
+                <legend class="contact-form-legend">
+                    Send us a message by filling out the form below and one of our Receptionists will be in touch:
+                </legend>
 
-					<div>
-						<label for="dob">Date of Birth </label>
-						<input type="date" id="dob" name="dob" required>
-					</div>
+                <div class="contact-form-type">
+                    <p class="contact-form-par">Are you completing this form on behalf of: </p>
 
-					<div>
-						<label for="telephone">Telephone Number: </label>
-						<input type="tel" id="telephone" name="telephone" required>
-					</div>
+                    <label class="contact-form-label" for="self">
+                        <input class="contact-checkbox" type="checkbox" id="self" name="self">
+                        Yourself
+                    </label>
+                    <label class="contact-form-label" for="another">
+                        <input class="contact-checkbox" type="checkbox" id="another" name="another">
+                        Someone else
+                    </label>
+                </div>
 
-					<div>
-						<label for="email">Email: </label>
-						<input type="email" id="email" name="email" required>
-					</div>
+                <div class="grouping">
+                    <label class="contact-form-label" for="fname">First Name </label>
+                    <input class="contact-input" type="text" id="fname" name="fname" required>
+                </div>
 
-					<div>
-						<label for="message">Your query or message: </label>
-						<input type="text" id="message" name="message" required>
-					</div>
+                <div class="grouping">
+                    <label class="contact-form-label" for="lname">Last Name </label>
+                    <input class="contact-input" type="text" id="lname" name="lname" required>
+                </div>
 
-					<input type="submit" value="Submit">
-				</fieldset>
-			</form>
-		</section>
-	</body>
+                <div class="grouping">
+                    <label class="contact-form-label" for="dob">Date of Birth </label>
+                    <input class="contact-input" type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="grouping">
+                    <label class="contact-form-label" for="telephone">Telephone Number: </label>
+                    <input class="contact-input" type="tel" id="telephone" name="telephone" required>
+                </div>
+
+                <div class="grouping">
+                    <label class="contact-form-label" for="email">Email: </label>
+                    <input class="contact-input" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="grouping">
+                    <label class="contact-form-label" for="message">Your query or message: </label>
+                    <input class="contact-input" type="text" id="message" name="message" required>
+                </div>
+
+                <input class="submit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+</body>
 </html>
